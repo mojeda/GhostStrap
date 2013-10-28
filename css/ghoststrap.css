@@ -1,0 +1,119 @@
+body {
+	padding-top: 50px;
+}
+
+.navbar-brand img { 
+	margin-top: -3px;
+}
+
+.jumbotron {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 250px;
+    background: #303538 no-repeat center center;
+    background-size: cover;
+}
+
+#siteinfo {
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0px 1px 0px #000;
+}
+
+#siteinfo #site-title a {
+	color: #f0f0f0;
+	font-size: 38px;
+	text-shadow: 0px 1px 0px #000;
+}
+
+h1.h2 {
+	margin-top: 0;
+}
+
+section.widget header.h4 {
+	text-align: center;
+}
+
+.social-icons {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.social-icons i {
+	font-size: 32px;
+	color: #cecece;
+	width: 60px;
+	height: 60px;
+	background: #eee;
+	padding-top: 13px;
+	border-radius: 50px;
+	border: 2px #eee solid;
+	margin: 0 5px 0 5px;
+	text-shadow: 0 1px 0 #fff;
+	float-left;
+}
+
+.social-icons a:hover i {
+	border: 2px #9fbb58 solid;
+}
+
+section #author-info {
+	text-align: center;
+}
+
+#author-cover {
+	background-color: #212425;
+	background-position: center bottom;
+	background-size: cover;
+	height: 300px;
+	padding: 30px 10px 10px 10px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+}
+
+#author-cover h4 {
+	color: #fff;
+	text-shadow: 0 1px #000;
+	font-size: 24px;
+}
+
+#author-cover p, #author-cover p a { 
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+
+#author-image {
+	width: 125px;
+	height: 125px;
+	border-radius: 100px;
+	background-position: center center;
+	background-size: cover;
+	border: 5px #fff solid;
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	margin-left: -62px;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1200px) {
+	article section p img, article section p iframe { width: 100%; }
+}
+@media only screen and (max-width: 990px) {
+	article section p img, article section p iframe { width: 100%; }
+}
+@media only screen and (max-width: 767px) {
+	article section p img, article section p iframe { width: 100%; }
+}
+@media only screen and (max-width: 420px) {
+	article section p img, article section p iframe { width: 100%; }
+}
+@media only screen and (max-width: 320px) {
+	article section p img, article section p iframe { width: 100%; height: 174px; }
+}

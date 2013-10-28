@@ -1,0 +1,63 @@
+<article class="hentry clearfix {{post_class}}" role="article">
+
+    <header class="article-header">
+
+        <h1 class="h2">
+            <a href="/{{slug}}" rel="bookmark" title="{{title}}">{{title}}</a>
+        </h1>
+
+        <p class="byline vcard">
+            Posted
+            <time class="updated"
+                  datetime="{{date published_at format='YYYY-MM-DD'}}"
+                  pubdate="">
+                {{date published_at format='YYYY-MM-DD'}}
+            </time>
+
+            by
+            <span class="author">
+                {{author}}
+            </span>
+
+            {{#if tags}}
+                <span class="amp">&amp;</span>
+                filed under
+                {{#each tags}}
+                    <!-- Tag Links are not quite ready yet.
+                           <a href="/tags/{{this.name}}"
+                           class="tag-label"
+                           title="View all posts in {{this.name}}"
+                           rel="category">{{this.name}}</a>
+                           -->
+                    <span class="tag-label">{{this.name}}</span>
+                {{/each}}
+
+            {{/if}}
+        </p>
+
+    </header>
+
+    <section class="entry-content clearfix">
+        {{content}}
+    </section>
+
+    <footer class="article-footer">
+        {{#if tags}}
+            <p class="tags">
+                <span class="tags-title">
+                    Tags:
+                    {{#each tags}}
+                        <!-- Tag Links are not quite ready yet.
+                           <a href="/tags/{{this.name}}"
+                           class="tag-label"
+                           title="View all posts in {{this.name}}"
+                           rel="category">{{this.name}}</a>
+                           -->
+                        <span class="tag-label">{{this.name}}</span>
+                    {{/each}}
+                </span>
+            </p>
+        {{/if}}
+    </footer>
+
+</article>

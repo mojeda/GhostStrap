@@ -1,0 +1,26 @@
+<header class="header" role="banner">
+
+    {{> navigation}}
+
+    <div id="inner-header" class="wrap clearfix">
+
+        {{#if @blog.logo}}
+            <!-- Logo -->
+            <div id="logo" class="h1">
+                <a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>
+            </div>
+        {{/if}}
+
+    </div>
+
+    <div class="jumbotron" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+      <div class="container" id="siteinfo">
+        <div id="site-title">
+            <a href="/" rel="nofollow">{{@blog.title}}</a>
+        </div>
+        <p>{{@blog.description}}</p>
+      </div>
+    </div>
+
+
+</header>

@@ -1,0 +1,28 @@
+<section class="widget">
+
+    {{#if post}}
+        {{#post}}
+
+        <section id="author-info">
+            <div id="author-cover" style="background-image: url({{author.cover}})">
+                <h4>{{author.name}}</h4>
+                <p>{{author.bio}}</p>
+
+                <p>{{author.location}}</p>
+                <p><a href="{{author.website}}" target="_blank">{{author.website}}</a></p>
+
+                <div id="author-image" style="background-image: url({{#if author.image}}{{author.image}}{{else}}/images/ghosted.png{{/if}})"></div>
+            </div>
+        </section>
+        {{/post}}
+    {{/if}}
+</section>
+
+<section class="widget">
+    <header class="h4">Social Links</header>
+    <section id="author-info">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </section>
+</section>

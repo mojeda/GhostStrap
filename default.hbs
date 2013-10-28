@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US" class="js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{{@blog.title}} - {{@blog.description}}</title>
+
+    <meta name="description" content="{{@blog.description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.png">
+
+    <!--[if IE]>
+    <link rel="shortcut icon" href="favicon.ico">
+    <![endif]-->
+
+    <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
+
+    <link rel="stylesheet" id="bootstrap-stylesheet-css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="fontawesome-stylesheet-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ghoststrap-stylesheet-css" href="/css/ghoststrap.css" type="text/css" media="all">
+
+    {{ghost_head}}
+    
+</head>
+
+
+<body class="{{body_class}}">
+
+    {{> header}}
+
+    <div class="container">
+
+        <section id="content">
+
+            <div class="row">
+                <div class="col-md-9">
+                    <main id="main" class="eightcol first clearfix" role="main">
+                        {{{body}}}
+                    </main>
+                </div>
+                <div class="col-md-3">
+                    <aside id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
+                        {{> sidebar}}
+                    </aside>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer" role="contentinfo">
+            <div id="inner-footer" class="wrap clearfix">
+                <p class="source-org copyright">© 2013 {{@blog.title}}. Ghoststrap by GhostResource.com - Built with Linen</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
+    {{ghost_foot}}
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
